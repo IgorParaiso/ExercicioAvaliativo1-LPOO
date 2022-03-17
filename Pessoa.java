@@ -1,6 +1,6 @@
 public class Pessoa {
      
-     private String nome;
+	private String nome;
 	private String telefone;
 	private String email;
 	private String dataDeAniversario;
@@ -17,5 +17,31 @@ public class Pessoa {
 	}
 	public void setNome(String nome){
 		this.nome = nome;    
+	}
+
+	public String getTelefone() {
+		return telefone;
+	}
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getDataDeAniversario() {
+		return dataDeAniversario;
+	}
+	public void setDataDeAniversario(String dataDeAniversario) {
+		this.dataDeAniversario = dataDeAniversario;
+	}
+
+	public String toString() {
+		return "Aniversariante [Nome: " + nome + " Telefone: " + telefone + "Email: " +
+				email + "Data de Aniversario: " + dataDeAniversario + "]\n";
 	}
 }
