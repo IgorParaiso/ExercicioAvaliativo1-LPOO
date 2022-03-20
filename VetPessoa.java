@@ -52,5 +52,40 @@ public class VetPessoa {
 		   
 	   }
 	   
-	  
-	}
+	   public VetPessoa pesquisaDiaMes (int dia, int mes) {
+		   VetPessoa aniversariantes = new VetPessoa(this.quant);
+		   for (int i =0; i<this.quant; i++) {
+			   if (vetPessoa[i].getDataDeAniversario().getDia() == dia && vetPessoa[i].getDataDeAniversario().getMes() == mes) {
+				   aniversariantes.insere(vetPessoa[i]);
+			   }
+			   
+		   }
+		   if (aniversariantes.quant == 0) {
+			   return null;   
+		   }
+		   return aniversariantes;
+	   }
+	   
+	   public VetPessoa pesquisaMes (int mes) {
+		   VetPessoa aniversariantes = new VetPessoa(this.quant);
+		   for (int i =0; i<this.quant; i++) {
+			   if (vetPessoa[i].getDataDeAniversario().getMes() == mes) {
+				   aniversariantes.insere(vetPessoa[i]);
+			   }
+		   }
+		   
+		   if (aniversariantes.quant == 0) {
+			   return null;   
+		   }
+		   return aniversariantes;
+	   }
+	   
+	   @Override
+	   public String toString() {
+		   String resultado = "";
+		   for (int i=0; i<this.quant;i++) {
+			   resultado = resultado + vetPessoa[i].toString() + " " + vetPessoa[i].getDataDeAniversario().toString() + "\n";
+		   }
+		   return resultado;
+	   }  
+}
