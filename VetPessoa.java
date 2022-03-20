@@ -20,4 +20,23 @@ public class VetPessoa {
         return null;
     }
     
+    public boolean insere (Pessoa usuario) {
+    	
+    	if (this.quant >= this.vetPessoa.length) {
+    		return false;
+    	}
+    	this.vetPessoa[quant] = usuario;
+    	this.quant++;
+    
+    }
+    
+    public int pesquisa(String nome) {
+    	for(int i; i<this.quant; i++) {
+    		if(vetPessoa[i].getNome().equals(nome)) {
+    			return i
+    		}
+    	}
+    	return -1;
+    }
+    
 }
