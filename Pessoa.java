@@ -41,7 +41,7 @@ public class Pessoa {
 	}
 
 	public String toString() {
-		return "Aniversariante [Nome: " + this.nome + " Telefone: " + this.telefone + "Email: " +
-				this.email + "Data de Aniversario: " + this.dataDeAniversario + "]\n";
+		return "Aniversariante [Nome: " + this.nome + " - Telefone: " + this.telefone + " - Email: " +
+				this.email + " - Data de Aniversario: " + this.dataDeAniversario + "]\n";
 	}
 }
