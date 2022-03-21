@@ -3,9 +3,9 @@ public class Pessoa {
 	private String nome;
 	private String telefone;
 	private String email;
-	private String dataDeAniversario;
+	private Data dataDeAniversario;
 
-	public Pessoa (String nome, String telefone, String email, String dataDeAniversario){
+	public Pessoa (String nome, String telefone, String email, Data dataDeAniversario){
 		this.nome = nome;
 		this.telefone = telefone;
 		this.email = email;
@@ -33,10 +33,10 @@ public class Pessoa {
 		this.email = email;
 	}
 
-	public String getDataDeAniversario() {
+	public Data getDataDeAniversario() {
 		return dataDeAniversario;
 	}
-	public void setDataDeAniversario(String dataDeAniversario) {
+	public void setDataDeAniversario(Data dataDeAniversario) {
 		this.dataDeAniversario = dataDeAniversario;
 	}
 
