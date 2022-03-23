@@ -8,6 +8,13 @@ public class VetPessoa {
 	        this.quant = 0;
 	    }
 	    
+            public Pessoa getPessoa(int aux){
+                if (aux >= 0 && aux<quant){
+               return this.vetPessoa[aux];
+                } else {
+                return null;
+        }
+            }
 	    public int getQuant(){
 	        return quant;
 	    }
@@ -32,7 +39,7 @@ public class VetPessoa {
 	    public int pesquisa(String nome) {
 	    	
 	    	for(int i=0; i<this.quant; i++) {
-	    		if(vetPessoa[i].getNome().equals(nome)) {
+	    		if(vetPessoa[i].getNome().toLowerCase().equals(nome.toLowerCase())) {
 	    			return i;
 	    		}
 	    	}
