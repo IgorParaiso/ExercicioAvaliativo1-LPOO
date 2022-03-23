@@ -65,9 +65,9 @@ public class AppPessoa {
                     int mes = InOut.leInt("Mes");
                     VetPessoa aniversariantes = VetPessoa.pesquisaDiaMes(dia, mes);
                     if(aniversariantes != null){
-                        for(int i=0;i<aniversariantes.length;i++){ // se quiser pode fazer foreach
+                        for(int i=0;i<aniversariantes.length;i++){ // 
                             System.out.println(aniversariantes[i].nome);
-                            System.out.println(aniversariantes[i].getDataDeAniversario()); // cuidado com esse get, pois não sei como está a classe 'Pessoa'
+                            System.out.println(aniversariantes[i].getDataDeAniversario()); // 
                         }
                     }
                     else System.out.println("NENHUM ANIVERSARIANTE");
