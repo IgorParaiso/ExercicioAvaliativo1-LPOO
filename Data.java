@@ -1,5 +1,5 @@
 public class Data {
-    private int dia;
+	private int dia;
 	private int mes;
 	private  int ano;
 
@@ -27,6 +27,7 @@ public class Data {
 		this.ano = a;
 	}
 	public String toString(){
-}
+		return this.getDia() +" / "+ this.getMes() +" / " + this.getAno();
+	}
 
 }
