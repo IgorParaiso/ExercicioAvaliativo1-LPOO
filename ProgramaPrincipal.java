@@ -25,7 +25,7 @@ public class AppPessoa {
                     String email = InOut.leString("Email");
                     String telefone = InOut.String("Telefone");
                     Pessoa pessoa = new Pessoa(nome, data(dia,mes,ano), email, telefone); 
-                    bool operacaoOk = VetPessoa.insere(pessoa);
+                    boolean operacaoOk = VetPessoa.insere(pessoa);
                     if(operacaoOk) System.out.println("Operação de inserção bem-sucedida!\n");
                     else System.out.println("Operação de inserção falhou!\n");
                     break;
@@ -33,7 +33,7 @@ public class AppPessoa {
                 case 2: // REMOVER
                     // ler o nome
                     String nome = InOut.leString("Nome");
-                    bool operacaoOk = VetPessoa.remove(pessoa);
+                    boolean operacaoOk = VetPessoa.remove(pessoa);
                     if(operacaoOk) System.out.println("Operação de remoção bem-sucedida!\n");
                     else System.out.println("Operação de remoção falhou!\n");
                     break;
