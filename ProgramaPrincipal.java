@@ -24,8 +24,7 @@ public class AppPessoa {
                     int ano = InOut.leInt("Ano");
                     String email = InOut.leString("Email");
                     String telefone = InOut.String("Telefone");
-                    Pessoa pessoa = new Pessoa(nome, data(dia,mes,ano), email, telefone); // verificar como ficou a classe de data);
-
+                    Pessoa pessoa = new Pessoa(nome, data(dia,mes,ano), email, telefone); 
                     bool operacaoOk = VetPessoa.insere(pessoa);
                     if(operacaoOk) System.out.println("Operação de inserção bem-sucedida!\n");
                     else System.out.println("Operação de inserção falhou!\n");
@@ -53,7 +52,7 @@ public class AppPessoa {
                     VetPessoa aniversariantes = VetPessoa.pesquisaDiaMes(dia, mes);
 
                     if(aniversariantes != null){
-                        for(int i=0;i<aniversariantes.length;i++){ // se quiser pode fazer foreach
+                        for(int i=0;i<aniversariantes.length;i++){ // 
                             System.out.println(aniversariantes[i].nome);
                         }
                     }
