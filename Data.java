@@ -11,19 +11,19 @@ public class Data {
 	public int getDia(){
 		return dia;
 	}
-	public void SetDia(int d){
+	public void setDia(int d){
 		this.dia = d;
 	}
 	public int getMes(){
 		return mes;
 	}
-	public void SetMes (int m){
+	public void setMes (int m){
 		this.mes = m;
 	}
 	public int getAno() {
 		return ano;
 	}
-	public void SetAno (int a){
+	public void setAno (int a){
 		this.ano = a;
 	}
 	public String toString(){
