@@ -1,0 +1,8 @@
+package hotel;
+
+public interface Atendimento {
+	public boolean checkin (Quarto quarto);
+	public boolean checkout(Quarto quarto);
+	public String ConsultarDisponiveis (vetQuartos listaQuartos);
+	public boolean fazerReserva(Quarto quartos);
+}
