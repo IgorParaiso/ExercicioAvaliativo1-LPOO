@@ -1,0 +1,7 @@
+package hotel;
+
+public interface Manutencao {
+	public boolean limpar(Quarto quarto);
+	public boolean TrocarChuveiro (Quarto quarto);
+	public boolean 	AbastecerToalha (Quarto quarto);
+}
