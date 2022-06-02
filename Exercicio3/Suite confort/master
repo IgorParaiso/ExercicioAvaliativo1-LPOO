@@ -1,1 +1,57 @@
+package suite;
+
+public class Confort extends Quarto implements Manutencao , Atendimento {
+	private boolean hidro;
+	public Confort (){
+		super(int andar, char identificador, int qntHosp, boolean reservado, Usuario usuario, boolean limpo, boolean checkin, String tipoCama, float valorBase, boolean cafeDaManha, String vista, float fatura);
+		boolean hidro = hidro;
+		}
+		}
+	@Override
+	public boolean checkin(Quarto quarto) {
+		/*if (get.limpar() && get.fazerReserva(usuario.Usuario) && checkin == false){
+			checkin = true;
+		}
+		return false;*/
+	}
+
+	@Override
+	public boolean checkout(Quarto quarto) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public String ConsultarDisponiveis(vetQuartos listaQuartos) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean fazerReserva(Quarto quartos) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean limpar(Quarto quarto) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean TrocarChuveiro(Quarto quarto) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean AbastecerToalha(Quarto quarto) {
+		int value = 10;
+		float fatura = 0;
+		fatura = fatura + 10;
+		return false;
+	}
+
+}
 
