@@ -8,7 +8,7 @@ public abstract class Quarto implements Atendimento, Manutencao{
 	private float valorBase, fatura;
 	
 	public Quarto(int andar, char identificador, int qntHosp, boolean reservado, Usuario usuario,
-			boolean limpo, boolean checkin, String tipoCama, float valorBase, boolean cafeDaManha,
+			boolean limpo, boolean check_in, String tipoCama, float valorBase, boolean cafeDaManha,
 			String vista, float fatura){
 		this.andar = andar;
 		this.identificador = identificador;
